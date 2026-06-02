@@ -1,0 +1,36 @@
+models:
+
+  fast:
+    name: phi3:mini
+    temperature: 0.3
+    max_tokens: 512
+    context_length: 4096
+    timeout_seconds: 60
+
+  reasoning:
+    name: deepseek-r1:7b
+    temperature: 0.2
+    max_tokens: 2048
+    context_length: 8192
+    timeout_seconds: 120
+
+  summarization:
+    name: mistral:7b
+    temperature: 0.4
+    max_tokens: 1024
+    context_length: 8192
+    timeout_seconds: 90
+
+  vision:
+    name: llava:7b
+    temperature: 0.2
+    max_tokens: 1024
+    context_length: 4096
+    timeout_seconds: 180
+
+  audio:
+    name: faster-whisper
+    temperature: 0.0
+    max_tokens: 512
+    context_length: 2048
+    timeout_seconds: 60
